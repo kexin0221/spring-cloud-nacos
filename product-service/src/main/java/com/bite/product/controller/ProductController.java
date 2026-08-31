@@ -15,7 +15,6 @@ public class ProductController {
 
     @RequestMapping("/{productId}")
     public ProductInfo getProductById(@PathVariable("productId") Integer productId) {
-        System.out.println("收到请求,Id:" + productId);
         return productService.selectProductById(productId);
     }
 }

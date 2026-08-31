@@ -12,6 +12,10 @@ spring:
         nacos:
             discovery:
                 server-addr: 193.112.202.18:8848
+                cluster-name: BJ
+        loadbalancer:
+            nacos:
+                enabled: true
 mybatis:
     configuration:
         map-underscore-to-camel-case: true

@@ -12,6 +12,7 @@ spring:
         nacos:
             discovery:
                 server-addr: 193.112.202.18:8848
+                cluster-name: BJ
 mybatis:
     configuration:
         map-underscore-to-camel-case: true
