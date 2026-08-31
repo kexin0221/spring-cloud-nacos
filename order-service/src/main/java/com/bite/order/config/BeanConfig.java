@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
-@LoadBalancerClient(name = "product-service", configuration = CustomLoadBalancerConfiguration.class)
 @Configuration
 public class BeanConfig {
     @Bean

@@ -1,3 +1,17 @@
+server:
+    port: 8080
 spring:
-    profiles:
-        active: @profile.name@
+    application:
+        name: order-service
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3306/cloud_order?characterEncoding=utf8&useSSL=false
+        username: root
+        password: '050221'
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    cloud:
+        nacos:
+            discovery:
+                server-addr: 193.112.202.18:8848
+mybatis:
+    configuration:
+        map-underscore-to-camel-case: true

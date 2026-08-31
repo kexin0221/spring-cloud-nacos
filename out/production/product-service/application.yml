@@ -8,10 +8,10 @@ spring:
         username: root
         password: '050221'
         driver-class-name: com.mysql.cj.jdbc.Driver
+    cloud:
+        nacos:
+            discovery:
+                server-addr: 193.112.202.18:8848
 mybatis:
-      configuration:
-          map-underscore-to-camel-case: true
-eureka:
-    client:
-        service-url:
-            defaultZone: http://127.0.0.1:10010/eureka
+    configuration:
+        map-underscore-to-camel-case: true
