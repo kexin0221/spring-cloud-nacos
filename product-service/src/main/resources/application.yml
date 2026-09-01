@@ -13,6 +13,7 @@ spring:
             discovery:
                 server-addr: 193.112.202.18:8848
                 cluster-name: BJ
+                ephemeral: false # 设置为非临时实例
 mybatis:
     configuration:
         map-underscore-to-camel-case: true
